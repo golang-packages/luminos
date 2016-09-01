@@ -12,7 +12,7 @@ If you already have Go, you may install Luminos by issuing the following
 command:
 
 ```sh
-go get menteslibres.net/luminos
+go get github.com/golang-packages/luminos
 ```
 
 ## Usage
@@ -20,7 +20,7 @@ go get menteslibres.net/luminos
 ```
 rev@localhost > luminos
 
-Luminos Markdown Server (0.9) - https://menteslibres.net/luminos
+Luminos Markdown Server (0.9) - https://github.com/golang-packages/luminos
 by J. Carlos Nieto <jose.carlos@menteslibres.net>
 
 Usage: luminos <arguments> <command>
@@ -50,7 +50,7 @@ luminos run
 ```
 
 If you want to use Luminos with Apache or NGINX see the [Getting
-started](https://menteslibres.net/luminos/getting-started) page.
+started](https://github.com/golang-packages/luminos/getting-started) page.
 
 ## Documentation
 
@@ -60,7 +60,7 @@ See the [project's page][5] for documentation, tips and tricks.
 
 Luminos is released under the MIT License.
 
-> Copyright (c) 2012-2013 José Carlos Nieto, https://menteslibres.net/luminos
+> Copyright (c) 2012-2013 José Carlos Nieto, https://github.com/golang-packages/luminos
 >
 > Permission is hereby granted, free of charge, to any person obtaining
 > a copy of this software and associated documentation files (the
@@ -109,4 +109,4 @@ under the MIT License.
 [2]: http://golang.org
 [3]: http://daringfireball.net/projects/markdown/
 [4]: https://github.com/xiam/luminos
-[5]: https://menteslibres.net/luminos
+[5]: https://github.com/golang-packages/luminos

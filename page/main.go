@@ -181,6 +181,13 @@ func dummyFilter(f os.FileInfo) bool {
 	return false
 }
 
+func acceptFilesFilter(f os.FileInfo) bool {
+	if !strings.HasSuffix(f.Name(), ".dot") && !strings.HasSuffix(f.Name(), ".graffle") {
+		return true;
+	}
+	return false
+}
+
 // directoryFilter is a filter for filterList. Returns all directories except
 // those that begin with "." or "_".
 func directoryFilter(f os.FileInfo) bool {
@@ -276,7 +283,7 @@ func (p *Page) CreateBreadCrumb() {
 func (p *Page) CreateSideMenu() {
 	var item anchor
 
-	files := filterList(p.FileDir, dummyFilter)
+	files := filterList(p.FileDir, acceptFilesFilter)
 
 	p.SideMenu = make([]anchor, 0, len(files))
 
@@ -294,7 +301,7 @@ func (p *Page) CreateSideMenu() {
 	if len(p.SideMenu) == 0 {
 
 		// Attempt to index parent directory.
-		files = filterList(p.FileDir+pathSeparator+"..", dummyFilter)
+		files = filterList(p.FileDir+pathSeparator+"..", acceptFilesFilter)
 
 		for _, file := range files {
 			item = p.CreateLink(file, p.BasePath+".."+pathSeparator)

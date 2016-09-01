@@ -39,8 +39,8 @@ import (
 	"github.com/russross/blackfriday"
 	"menteslibres.net/gosexy/to"
 	"menteslibres.net/gosexy/yaml"
-	"menteslibres.net/luminos/page"
-	"menteslibres.net/luminos/watcher"
+	"github.com/golang-packages/luminos/page"
+	"github.com/golang-packages/luminos/watcher"
 )
 
 const (

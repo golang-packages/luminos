@@ -19,7 +19,7 @@
 // OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-package main // package "menteslibres.net/luminos"
+package main // package "github.com/golang-packages/luminos"
 
 import (
 	"log"
@@ -32,12 +32,12 @@ import (
 const pathSeparator = string(os.PathSeparator)
 
 // Version holds the software version.
-const Version = "0.9"
+const Version = "0.13"
 
 func main() {
 	// Software properties.
 	cli.Name = "Luminos Markdown Server"
-	cli.Homepage = "https://menteslibres.net/luminos"
+	cli.Homepage = "https://github.com/golang-packages/luminos"
 	cli.Author = "J. Carlos Nieto"
 	cli.Version = Version
 	cli.AuthorEmail = "jose.carlos@menteslibres.net"

@@ -196,7 +196,7 @@ func main() {
 
 [1]: http://golang.org
 [2]: https://github.com/xiam/luminos
-[3]: https://menteslibres.net/luminos
+[3]: https://github.com/golang-packages/luminos
 [4]: https://menteslibres.net/xiam/donate
-[5]: https://menteslibres.net/luminos/getting-started
+[5]: https://github.com/golang-packages/luminos/getting-started
 [6]: https://menteslibres.net/xiam
